@@ -42,8 +42,9 @@ classifier.fit(X_train, y_train)
 #Predicting the test set
 y_pred = classifier.predict(X_test)
 
-#confusion matrix
+#confusion matrix is confusing!
 from sklearn.metrics import confusion_matrix, accuracy_score
 cm = confusion_matrix(y_test, y_pred)
 acc = accuracy_score(y_test, y_pred)
+
 
